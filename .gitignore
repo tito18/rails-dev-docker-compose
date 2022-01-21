@@ -5,6 +5,6 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Ignore repo
-/DockerVolumes/db/*
+/DockerVolumes/db/data
 
 # /.env
