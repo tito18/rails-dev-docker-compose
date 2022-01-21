@@ -9,7 +9,7 @@ services:
       - .env
     volumes:
       - ./DockerVolumes/db/data:/var/lib/postgresql/data
-    network:
+    networks:
       - .rails-dev
   
   app:
@@ -26,8 +26,8 @@ services:
       - "3000:3000"
     depends_on:
       - db
-    network:
+    networks:
       - rails-dev
 
-network:
+networks:
   rails-dev:
