@@ -1,6 +1,6 @@
 # rails-dev-docker-compose
 
-## How to use my eskeleton rails development docker-compose
+## How to use my rails development docker-compose skeleton 
 
 1. Upload your rails app in the next folder "DockerVolumes -> app -> repo".
 2. Update your ruby version in the dockerfile located "DockerVolumes -> app -> v1.Dockerfile"
