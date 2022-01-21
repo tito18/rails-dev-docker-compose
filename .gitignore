@@ -7,4 +7,4 @@
 # Ignore repo
 /DockerVolumes/app/db/*
 
-/.env
+# /.env
