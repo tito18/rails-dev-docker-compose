@@ -1,5 +1,6 @@
 # Put ruby verios project
 FROM ruby:3.1.0
+RUN apt-get update -qq && apt-get install -y build-essential 
 
 # Register Yarn package source.
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -

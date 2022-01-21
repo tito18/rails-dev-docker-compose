@@ -10,12 +10,12 @@ services:
     volumes:
       - ./DockerVolumes/db/data:/var/lib/postgresql/data
     networks:
-      - .rails-dev
+      - rails-dev
   
   app:
     container_name: app
     build:
-      context: ./DockerVolumes/web/
+      context: ./DockerVolumes/app/
       dockerfile: v1.Dockerfile
     env_file:
       - .env
@@ -23,7 +23,7 @@ services:
       - ./DockerVolumes/app/repo:/app
     command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
     ports:
-      - "3000:3000"
+      - "4000:3000"
     depends_on:
       - db
     networks:
